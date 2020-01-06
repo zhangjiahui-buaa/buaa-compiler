@@ -1,0 +1,347 @@
+const int m=+1,_n=-1,_1=0093;
+const char P='B',q='a',r_2='1',S_='_',_Add ='+',_Sub='-',_Mul='*',_Div='/';
+int  x,int_c[010],y;
+char gwent,ciri,char_t[8],char_U[02];
+
+
+int fib(int n)
+{
+    if(n==0)
+        return (0);
+    if(n==1)
+        return (1);
+    else
+        return (fib(n-1)+fib(n-2));
+}
+
+int int_add1(int x)
+{
+    return (x+1);
+}
+
+int sum(int x,int y)
+{
+    return (x+y);
+}
+
+int return_1
+{
+    return (1);
+}
+
+
+char char_ret(char x)
+{
+    return (x);
+}
+int ch_add_int(char x,int y)
+{
+    return (x+y);
+}
+int ch_sum(char x,char y)
+{
+    return (x+y);
+}
+
+char return_c
+{
+    return ('c');
+}
+
+
+void printf_charadd1(char a)
+{
+    printf(a+1);
+}
+
+void nothing
+{
+    ;
+}
+
+void test12
+{
+
+    const int  _abcdefghijklmnopqrstuvwxyz=1;
+    const char _ABCDEFGHIJKLMNOPQRSTUVWXY='c';
+    int a,C,_D;
+    _D = ('_');
+    a = 'a'+'b'+'c'+'d'+'e'+'f'+'g'+'h'+'i'+'j'+'k'+'l'+'m'+'n'
+    +'o'+'p'+'q'+'r'+'s'+'t'+'u'+'v'+'w'+'x'+'y'+'z';
+    C = 'A'+'B'+'C'+'D'+'E'+'F'+'G'+'H'+'I'+'J'+'K'+'L'+'M'+'N'
+    +'O'+'P'+'Q'+'R'+'S'+'T'+'U'+'V'+'W'+'X'+'Y'+'Z';
+    printf(_D);
+    printf(a);
+    printf(C);
+}
+
+void test13
+{
+    int a;
+    a=0+1+2+3+4+5+6+7+8+9+0;
+    printf(a);
+}
+void test14(int a,int b,int c,int d,int e)
+{
+    printf(a+b+c+d+e);
+}
+
+void printf_2
+{
+    printf(2);
+    return;
+}
+
+
+void main() 
+{
+    const int a=1,b=2;
+    char c1,c2,c3;
+    int ord,q1,q2,q3,q4,s1[020],t1[0010];
+    q1=0;
+    q2=0;
+    q3=0;
+    scanf(ord);
+    if(ord==1){
+        scanf(q4);
+        q4=fib(q4);
+        printf(q4);
+    }
+    if(ord==2){
+        if(b>0)
+            q1='b'+1;
+        if(a<0)
+            q2='a'+1;
+        else
+            if(b<1)
+                q3='b'+1;
+            else
+                q3='b'-1;
+        printf("q1=",q1);
+        printf("q2=",q2);
+        printf("q3=",q3);
+    }
+    if(ord==3){
+        while(q2<3)
+        {
+            q2=q2+1;
+        }
+        printf("before q2:");
+        printf(q2);
+        while(q2)
+        {
+            q2=q2-1;
+        }
+        printf("later q2:");
+        printf(q2);
+    }
+    if(ord==4){
+        for(q4=1;q4<4;q4=q4+001)
+        {
+            q2=q2+1;
+        }
+        printf("before q2:");
+        printf(q2);
+        for(q4=1;q4<1;q4=q4+001)
+        {
+            q2=q2+1;
+        }
+        printf("later q2:");
+        printf(q2);
+    }
+    if(ord==5){
+        {
+            printf("! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ");
+            printf("[]^_`abcdefghijklmnopqrstuvwxyz{|}~");
+        }
+    }
+
+    if(ord==6){
+        q1=int_add1(1);
+        printf(q1);
+        c1=return_c;
+        printf(c1);
+    }
+    if(ord==7){
+        printf_2;
+        printf_charadd1('c');
+    }
+    if(ord==8){
+        q1 = 10;
+        printf(q1);
+        s1[2*1]=97;
+        printf(s1[2]);
+    }
+    if(ord==9){
+        scanf(q1,c1);
+        printf("test9");
+        printf("q1=",q1);
+        printf("c1=");
+        printf(c1);
+        ;
+        return;
+    }
+
+    if(ord==10){
+        q1 =1;
+        q2 =2;
+        q3 = +q1;
+        s1[3*2+1]=2;
+        printf(q3);
+        q3 = -'d';
+        printf(q3);
+        q4=+q1*q3/q2-(3*4-2)+('c'+2)-(return_c)+(ch_add_int('b',1))-s1[7]*2;
+        printf(q4);
+        t1[0] = 'd'+20;       
+        t1[1] = -s1[7]+2*3;         
+        t1[2*3/3] = sum(2,-1);     
+        q1 = +(t1[1]+140)*t1[2]-t1[0]+40;
+        printf(q1);
+    }    
+
+    if(ord==11){
+        q1=1;
+        q2=2;
+        q3=2;
+        q4=0;
+        if(q1<q2)
+        {
+            q4=q4+1;
+        }
+        printf(q4);
+        if(q1<=q3/q2)
+        {
+            q4=q4+1;
+        }
+        printf(q4);
+        if(q2>q3)
+        {
+            q4=q4+1;
+        }
+        printf(q4);
+        if(q2>=q3)
+        {
+            q4=q4+1;
+        }
+        printf(q4);
+        if(q2!=q3)
+        {
+            q4=q4+1;
+        }
+        printf(q4);
+        if(q2==q3*q1)
+        {
+            q4=q4+1;
+        }
+        printf(q4);
+    }
+
+    if(ord==12)
+        test12;
+
+
+    if(ord==13)
+        test13;
+
+    if(ord==14)
+        test14(1,2,3,4,5);
+
+}
+
+##input
+1 8
+##output
+21
+
+
+
+##input
+2 
+##output
+q1=99 
+q2=0
+q3=97
+
+##input
+3
+##output
+before q2:
+3
+later q2:
+0
+
+##input
+4
+##output
+before q2:
+3
+later q2:
+4
+
+##input
+5
+##output
+! #$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ
+[]^_`abcdefghijklmnopqrstuvwxyz{|}~
+
+
+##input
+6
+##output
+2
+c
+
+##input
+7
+##output
+2
+100
+
+##input
+8
+##output
+10
+97
+
+##input
+9 1 a
+##output
+test9
+q1=1
+c1=
+a
+
+##input
+10
+##output
+1
+-100
+37
+64
+
+##input
+11
+##output
+1
+2
+2
+3
+3
+4
+
+##input
+12
+##output
+95
+2847
+2015
+
+##input
+13
+##output
+45
+
+##input
+14
+##output
+15

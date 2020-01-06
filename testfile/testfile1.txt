@@ -1,0 +1,150 @@
+const int zero = 0,neg = -1,pos = +1;
+const char c = 'c',CC = 'C',Plus = '+',_Plus = '-',Mul = '*',_Mul = '/',n_u_m_0='0';
+int a1var,a2var,arrayintVar[10];
+char c1var,c2var,arraycharVar[10];
+
+void testIO(){
+    const int iiii = 10;
+    int i,iarray[10];
+    char ch,charray[10];
+    
+    printf("");
+    printf(" !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~");
+    scanf(i,ch);
+    iarray[0] = i;
+    charray[0] = ch;
+    printf("IO i:",i);
+    printf(ch);
+    printf(charray[0]);
+    printf(neg+ch);
+    printf(charray[0]*(pos-neg));
+    
+    return;
+}
+
+void testIf(int a,char ch){
+    int ch2;
+    ch2 = ch+ch;
+    if(a==10){
+        printf("beq10");
+        return;
+    }
+    else{
+        if(a>=1) printf("bge1");
+        else{
+            if(a<=-1)    printf("ble-1");
+            else{
+                if(a>1) printf("bgt1");
+                else{
+                    if(a<-1) printf("blt1");
+                    else{
+                        if(a!=0) printf("bne0");
+                        else{
+                            if(ch2>126){
+                                if(a)
+                                    printf("beq0bgt?");
+                                else
+                                    printf("beq0bgt?");
+                            }
+                            else
+                                printf("ble?");
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+void testDoWhile(){
+    int n;
+    n=1;
+    do n=n*2; while(n<20)
+    do{
+        n=n-1;
+        if(n/1>=1) ;
+        else printf(n);
+    }while(n)
+}
+
+
+
+int itrue(){
+    return (1);
+}
+char chtrue(){
+    return ('a');
+}
+
+void empty(){;{};{;};;;}
+
+void testExpression(){
+    int i,array[10],result;
+    i=a2var;
+    array[1] = 10;
+    result = -neg+i/2-i*zero;
+    printf(result);
+    result = pos*array[itrue()]*3*c*(i*(pos+pos)+itrue())*result;
+    printf("result",result);
+}
+
+int fibo(int n){
+    if(n==0) return (0);
+    else{
+        if(n==1) return (1);
+        else return (fibo(n-1)+fibo(n-2));
+    }
+}
+
+void main(){
+    int fn;
+    testIO();
+    scanf(a1var);
+    c1var = 'h';
+    testIf(a1var,'h');
+    testDoWhile();
+    itrue();
+    chtrue();
+    empty();
+    testExpression();
+    scanf(fn);
+    printf("fibo(fn):",fibo(fn));
+}
+输入1：
+2
+h
+0
+2
+4
+输出1：
+""" !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+"IO i:"2hh103208
+"beq0bgt?"0
+"result"98010
+"fibo(fn):"3
+
+输入2：
+5
+a
+3
+3
+10
+输出2：
+""" !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+"IO i:"5aa96194
+"bge1"0
+"result"98010
+"fibo(fn):"55
+
+输入3：
+1
+b
+0
+0
+0
+输出3：
+""" !#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]^_`abcdefghijklmnopqrstuvwxyz{|}~"
+"IO i:"1bb97196
+"beq0bgt?"0
+"result"30445470
+"fibo(fn):"0
